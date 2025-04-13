@@ -52,27 +52,14 @@ const TaskTable = ({ openModal }) => {
       
       <div className="border rounded-lg overflow-auto h-[600px]">
         <table className="w-full">
-          <thead>
-          <tr>
-  <th className="p-4 text-left">
-    <div className="flex items-center">
-      Title
-    </div>
-  </th>
-  <th className="p-4 text-left">
-    <div className="flex items-center">
-      Description
-    </div>
-  </th>
-  <th className="p-4 text-left">
-    <div className="flex items-center">
-      Status
-    </div>
-  </th>
-  <th className="p-4 text-left">Actions</th>
-</tr>
-
-          </thead>
+        <thead>
+  <tr>
+    <th className="p-4 text-left">Title</th>
+    <th className="p-4 text-left">Description</th>
+    <th className="p-4 text-left">Status</th>
+    <th className="p-4 text-left">Actions</th>
+  </tr>
+</thead>
 
           <tbody>
   {tasks?.length === 0 ? (
@@ -87,7 +74,6 @@ const TaskTable = ({ openModal }) => {
                 <td className="p-4">{task.title}</td>
                 <td className="p-4">{task.description}</td>
                 
-                {/* Status column */}
                 <td className="p-4">
                   <div className="relative">
                   <button
